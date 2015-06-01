@@ -46,7 +46,7 @@
                     <li class="all-day">
                         <time class="cbp_tmtime" datetime="all-day"><span>all-day</span></time>
                     </li>
-                    <li>
+                   <!--  <li>
                         <time class="cbp_tmtime" datetime="00:00"><span>00:00</span></time>
                     </li>
                     <li>
@@ -66,44 +66,44 @@
                     </li>
                     <li>
                         <time class="cbp_tmtime" datetime="06:00"><span>06:00</span></time>
-                    </li>
+                    </li> -->
                     <li>
                         <time class="cbp_tmtime" datetime="07:00"><span>07:00</span></time>
                     </li>
                     <li>
-                        <time class="cbp_tmtime" datetime="08:50"><span>08:50</span></time>
+                        <time class="cbp_tmtime" datetime="08:30"><span>08:30</span></time>
                     </li>
                     <li>
-                        <time class="cbp_tmtime" datetime="09:00"><span>09:00</span></time>
+                        <time class="cbp_tmtime" datetime="08:40"><span>08:40</span></time>
                     </li>
                     <li>
-                        <time class="cbp_tmtime" datetime="10:00"><span>10:00</span></time>
+                        <time class="cbp_tmtime" datetime="10:10"><span>10:10</span></time>
                     </li>
                     <li>
-                        <time class="cbp_tmtime" datetime="11:00"><span>11:00</span></time>
+                        <time class="cbp_tmtime" datetime="10:20"><span>10:20</span></time>
                     </li>
                     <li>
-                        <time class="cbp_tmtime" datetime="12:00"><span>12:00</span></time>
+                        <time class="cbp_tmtime" datetime="11:50"><span>11:50</span></time>
                     </li>
                     <li>
                         <time class="cbp_tmtime" datetime="13:00"><span>13:00</span></time>
                     </li>
                     <li>
-                        <time class="cbp_tmtime" datetime="14:00"><span>14:00</span></time>
+                        <time class="cbp_tmtime" datetime="14:30"><span>14:30</span></time>
                     </li>
                     <li>
-                        <time class="cbp_tmtime" datetime="15:00"><span>15:00</span></time>
+                        <time class="cbp_tmtime" datetime="14:40"><span>14:40</span></time>
                     </li>
                     <li>
-                        <time class="cbp_tmtime" datetime="16:00"><span>16:00</span></time>
+                        <time class="cbp_tmtime" datetime="16:10"><span>16:10</span></time>
                     </li>
                     <li>
-                        <time class="cbp_tmtime" datetime="17:00"><span>17:00</span></time>
+                        <time class="cbp_tmtime" datetime="16:20"><span>16:20</span></time>
                     </li>
                     <li>
-                        <time class="cbp_tmtime" datetime="18:00"><span>18:00</span></time>
+                        <time class="cbp_tmtime" datetime="17:50"><span>17:50</span></time>
                     </li>
-                    <li>
+                    <!-- <li>
                         <time class="cbp_tmtime" datetime="19:00"><span>19:00</span></time>
                     </li>
                     <li>
@@ -117,29 +117,30 @@
                     </li>
                     <li>
                         <time class="cbp_tmtime" datetime="23:00"><span>23:00</span></time>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script type="text/javascript" src="js/jquery.calendario.js"></script>
         <script>
+        var maxHeight=150;
         var timelineEvents = {
                 'TODAY': [
                     // {content: '<span>John Applesed\'s Birthday</span>', allDay: true},
                     // {content: '<span>Arnold Mathew\'s Birthday</span>', allDay: true},
                     // {content: '<span>Captain X\'s Birthday</span>', allDay: true},
-                    {content: '<span>Sleep, sleep, sleep!</span>', startTime: '00:00', endTime: '06:00'}, 
-                    {content: '<span>Wake Up! Get Ready! 30 Mins Max :)</span>', startTime: '06:00', endTime: '06:30'},
-                    {content: '<span>I\'m getting late for work! GOD!! (Average time 17mins to reach)</span>', startTime: '06:30', endTime: '06:47'},
-                    {content: '<a href="https://en.wikipedia.org/wiki/LIFI">Make report on Li-Fi</a>', startTime: '06:47', endTime: '12:00'},
-                    {content: '<span>Lunch with friend\'s at KFC</span>', startTime: '12:00', endTime: '13:00'}, 
-                    {content: '<span>10mins break :p</span>', startTime: '13:00', endTime: '13:10'},
-                    {content: '<span>Have no clue? O.o</span>', startTime: '13:20', endTime: '17:41'},
-                    {content: '<span>Quick nap, after returning home!</span>', startTime: '18:00', endTime: '18:20'},
-                    {content: '<span>Dinner with my Girl Friend</span>', startTime: '19:00', endTime: '21:30'},
-                    {content: '<span>Prepare for Sleep!</span>', startTime: '22:00', endTime: '23:01'},
-                    {content: '<span>Trying to sleep</span>', startTime: '23:01', endTime: '00:00'}
+                    // {content: '<span>Sleep, sleep, sleep!</span>', startTime: '00:00', endTime: '06:00'}, 
+                    // {content: '<span>Wake Up! Get Ready! 30 Mins Max :)</span>', startTime: '06:00', endTime: '06:30'},
+                    // {content: '<span>I\'m getting late for work! GOD!! (Average time 17mins to reach)</span>', startTime: '06:30', endTime: '06:47'},
+                    // {content: '<a href="https://en.wikipedia.org/wiki/LIFI">Make report on Li-Fi</a>', startTime: '06:47', endTime: '12:00'},
+                    // {content: '<span>Lunch with friend\'s at KFC</span>', startTime: '12:00', endTime: '13:00'}, 
+                    // {content: '<span>10mins break :p</span>', startTime: '13:00', endTime: '13:10'},
+                    // {content: '<span>Have no clue? O.o</span>', startTime: '13:20', endTime: '17:41'},
+                    // {content: '<span>Quick nap, after returning home!</span>', startTime: '18:00', endTime: '18:20'},
+                    // {content: '<span>Dinner with my Girl Friend</span>', startTime: '19:00', endTime: '21:30'},
+                    // {content: '<span>Prepare for Sleep!</span>', startTime: '22:00', endTime: '23:01'},
+                    // {content: '<span>Trying to sleep</span>', startTime: '23:01', endTime: '00:00'}
                 ]
             };
 
@@ -225,10 +226,11 @@
                         var d = new Date(), hour;
                         $('ul > li:not(.all-day)').each(function(i, e){
                             d = calTime(e);
+                            fixHeight(e)
                             hour = d.getHours();
                             minituesInt = d.getMinutes();
                             minitues=minituesInt < 10 ?('0'+minituesInt): minituesInt
-                            $(e).find('time').attr('datetime', d.toISOString());
+                            // $(e).find('time').attr('datetime', d.toISOString());
                             if(hour < 10) $(e).find('time > span').html('0' + hour + ':' + minitues+'<h6>AM</h6>');
                             else if(hour < 12 && hour >= 10) $(e).find('time > span').html(hour + ':' + minitues+'<h6>AM</h6>');
                             else if(hour == 12) $(e).find('time > span').html(hour + ':' + minitues+'<h6>PM</h6>');
@@ -237,8 +239,18 @@
                         });
                     }
                     function fixHeight(e){
-                        var e1=$(e).next(), e2=$(e1).next(), time1=calTime(e), time2=calTime(e1), time=calTime(e)
-                        
+                        if($(e).is(':nth-child(2), :last-child'))
+                        {
+                            $(e).css('height', maxHeight+'px');
+                            return;
+                        }
+                        var e1=$(e).prev(), end=calTime(e), start=calTime(e1)
+                        console.log(getMinutesHours(end) +' - '+getMinutesHours(start));
+                        $(e1).css('height', maxHeight*(getMinutesHours(end)-getMinutesHours(start))/60+'px');
+                        // console.log(time1-time)
+                    }
+                    function getMinutesHours(d){
+                        return d.getHours()*60+d.getMinutes();
                     }
                     function calTime(e){
                         var d = new Date();
@@ -259,10 +271,11 @@
                     function removeAllDayTag(){
                         $('li.all-day').remove();
                     }
-                    function date(content, start, end) {                
-                        var pos = start.getHours() + 2,
-                            top = ((start.getMinutes() / 60) * 200) == 0 ? '-1px' :  ((start.getMinutes() / 60) * 200) - 1 + 'px',
-                            height = ((((end.getTime() - start.getTime()) / (60 * 1000 * 60)) * 200) - 1) + 'px',
+                    function date(content, start, end) {
+                    // Start 7:00                
+                        var pos = start.getHours() -5,
+                            top = ((start.getMinutes() / 60) * maxHeight) == 0 ? '-1px' :  ((start.getMinutes() / 60) * maxHeight) - 1 + 'px',
+                            height = ((((end.getTime() - start.getTime()) / (60 * 1000 * 60)) * maxHeight) - 1) + 'px',
                             append = '<div class="cbp_tmlabel" style="top:'+ top + ';height:' + height + '; max-height:' + height + '">' +
                                 content + '</div>';
                         $('ul > li:nth-child(' + pos +')').append(append);
