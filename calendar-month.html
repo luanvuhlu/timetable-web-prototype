@@ -69,13 +69,16 @@
 			
 				var cal = $( '#calendar' ).calendario( {
 						onDayClick : function( $el, $contentEl, dateProperties ) {
-
-							for( var key in dateProperties ) {
-								console.log( key + ' = ' + dateProperties[ key ] );
-							}
+							console.log($contentEl)
+							// for( var key in dateProperties ) {
+							// 	console.log( key + ' = ' + dateProperties[ key ] );
+							// }
 
 						},
-						caldata : codropsEvents
+						caldata : codropsEvents,
+						displayWeekAbbr : true,
+						checkUpdate: false,
+						zone: '+07:00',
 					} ),
 					$month = $( '#custom-month' ).html( cal.getMonthName() ),
 					$year = $( '#custom-year' ).html( cal.getYear() );
